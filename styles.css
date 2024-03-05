@@ -88,6 +88,16 @@ nav li a {
     text-decoration: none;
 }
 
+nav li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    left: 0;
+    bottom: -4px;
+    background: white;
+    position: absolute;
+}
+
 nav li a.active::after {
     content: "";
     width: 50%;
